@@ -1,15 +1,37 @@
-﻿namespace Classes
+﻿using System;
+using System.Collections.Generic;
+
+
+namespace Classes
 {
     public class Program
     {
         static void Main(string[] args)
         {
-            var Car = new Car();
-            Car.Make = "Mclaren";
-            Car.Model = "Senna";
-            Car.Year = 2023;
+            var MyCar = new Car();
+            MyCar.Make = "Mclaren";
+            MyCar.Model = "Senna";
+            MyCar.Year = 2023;
 
-            Console.WriteLine($" I own a {Car.Year} {Car.Make} {Car.Model}");
+            var Honda = new Car()
+            {
+                Make = "Honda" ,
+                Model = "HR-v" ,
+                Year = 2023
+            };
+            
+            var Mazda = new Car("Mazda", "Stinger", 2023)
+            {
+
+            };
+            
+            
+            
+            
+            
+            
+            
+            
         }
     }
 }
